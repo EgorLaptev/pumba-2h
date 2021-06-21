@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#startScreen,
+#loseScreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+#loseScreen {
+    background: #111 url("../media/timon-pumbaa-wall-9.jpg") 50% 100% no-repeat;
+}
+
+#startScreen {
+    background: #111 url("../media/Wallpaper_1-fr.jpg") 100% 100% no-repeat;
+    justify-content: flex-start;
+}
+
+#startScreen .instruction {
+    color: darkgreen;
+    padding: 50px;
+    font-size: 18px;
+    margin-top: 50px;
+    background-color: #002200;
+}
+
+#startScreen .instruction .keys {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#startScreen .instruction .keys button {
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: green;
+    color: #003300;
+    font-size: 20px;
+}
+
+#startScreen .instruction .keys button:hover {
+    background: #ddd;
+}
+
+#startScreen .instruction .keys li {
+    margin: 10px 0;
+}
+
+#nameForm {
+    margin-top: 50px;
+}
+
+#startScreen input,
+#loseScreen button {
+    padding: 15px 20px;
+    background-color: green;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #003300;
+}
+
+#loseScreen .container {
+    color: darkgreen;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.5);
+    padding: 50px 100px;
+}
+
+#loseScreen {
+    display: none;
+}
+
+#intro {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+canvas {
+    display: block;
+}

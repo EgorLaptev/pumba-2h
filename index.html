@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Timon & Pumba</title>
+</head>
+<body>
+
+<section id="startScreen">
+
+    <section class="instruction">
+
+        <span>
+            В этой игре вам нужно будет собирать гусенец, что бы набрать как можно больше очков до истечения времени. Остерегайтесь гиен!
+        </span>
+
+        <ul class="keys">
+            <li> <button> < </button> - Что бы двигаться влево </li>
+            <li> <button> > </button> - Что бы двигаться вправо </li>
+            <li> <button> ^ </button> - Прыжок </li>
+            <li> <button> Esc </button> - Включение/Выключение паузы </li>
+        </ul>
+
+    </section>
+
+    <form action="" id="nameForm">
+        <input type="text" placeholder='Name' id="name">
+        <input type="submit" value="Play" id="play">
+    </form>
+
+</section>
+
+<section id="loseScreen">
+
+    <div class="container">
+        <h2>Ваши очки: <span id="points"></span></h2>
+        <button id="replay">Play again</button>
+    </div>
+
+</section>
+
+<video id="intro" width="100%" height="100%"
+       src="./media/Timon%20_%20Pumbaa%20-%20Title%20Song%20%5BEnglish%20Version%5D.mp4"></video>
+
+<canvas id="canvas"></canvas>
+
+<script type="module" src='./js/script.js'></script>
+
+</body>
+</html>
